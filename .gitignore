@@ -1,0 +1,32 @@
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+cache/
+
+# data and large third-party models: download or regenerate them (see README, "Getting the data")
+data/
+models/hf/
+outputs/submissions/
+
+# third-party papers and documents (not ours to redistribute)
+literature/pdf/
+literature/txt/
+/*.pptx
+/*.pdf
+
+# personal details and local-only material
+configs/author.json
+report/author.tex
+report/paper.pdf
+poster/
+scripts/build_poster.py
+scripts/make_figures.py
+
+# LaTeX build artefacts
+report/*.aux
+report/*.log
+report/*.bbl
+report/*.blg
+report/*.out
+report/*.synctex.gz

@@ -1,0 +1,56 @@
+[
+  {
+    "system": "XL-LEXEME + agglomerative",
+    "protocol": "synEN-tune",
+    "t": 0.4,
+    "synEN_b3": 0.687182860921648,
+    "synEN_rho": 0.23802683921251924,
+    "synEN_k": 4.8,
+    "SV_b3": 0.8151280844034847,
+    "SV_rho": 0.5234141901348279,
+    "SV_k": 3.5
+  },
+  {
+    "system": "XL-LEXEME + agglomerative",
+    "protocol": "SV-LOWO",
+    "SV_b3": 0.7787345511057084,
+    "SV_rho": 0.303461074749682,
+    "SV_k": 3.6
+  },
+  {
+    "system": "SGC smoothing (k=5, 2 hops) + agglomerative",
+    "protocol": "synEN-tune",
+    "t": 0.3,
+    "synEN_b3": 0.6841359934578516,
+    "synEN_rho": 0.21074540559691735,
+    "synEN_k": 3.6,
+    "SV_b3": 0.7864522988419093,
+    "SV_rho": 0.5640315302255487,
+    "SV_k": 3.2
+  },
+  {
+    "system": "SGC smoothing (k=5, 2 hops) + agglomerative",
+    "protocol": "SV-LOWO",
+    "SV_b3": 0.7933450021646844,
+    "SV_rho": 0.5475440210862129,
+    "SV_k": 2.8
+  },
+  {
+    "system": "SGC smoothing (k=10, 2 hops) + agglomerative",
+    "protocol": "synEN-tune",
+    "t": 0.3,
+    "synEN_b3": 0.6919550715107503,
+    "synEN_rho": 0.1957069681922301,
+    "synEN_k": 3.35,
+    "SV_b3": 0.783629437956013,
+    "SV_rho": 0.48988672383178367,
+    "SV_k": 2.9
+  },
+  {
+    "system": "SGC smoothing (k=10, 2 hops) + agglomerative",
+    "protocol": "SV-LOWO",
+    "SV_b3": 0.7682146941543297,
+    "SV_rho": 0.3671973668343223,
+    "SV_k": 3.0
+  }
+]

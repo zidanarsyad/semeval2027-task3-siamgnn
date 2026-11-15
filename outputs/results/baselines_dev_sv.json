@@ -1,0 +1,76 @@
+[
+  {
+    "system": "oracle (gold labels)",
+    "task": "S1",
+    "bcubed_f": 1.0,
+    "spearman": 1.0
+  },
+  {
+    "system": "one cluster per word (1C1W)",
+    "task": "S1",
+    "bcubed_f": 0.7563415432223628,
+    "spearman": 0
+  },
+  {
+    "system": "one cluster per usage (1C1I)",
+    "task": "S1",
+    "bcubed_f": 0.05230370832762247,
+    "spearman": -0.17385825265522475
+  },
+  {
+    "system": "cluster = era (pre/post 1950)",
+    "task": "S1",
+    "bcubed_f": 0.6667783737897159,
+    "spearman": 0.3395475503328477
+  },
+  {
+    "system": "cluster = period",
+    "task": "S1",
+    "bcubed_f": 0.26435958103429413,
+    "spearman": 0
+  },
+  {
+    "system": "random 2 clusters",
+    "task": "S1",
+    "bcubed_f": 0.545795862772066,
+    "spearman": 0.1309050629680547
+  },
+  {
+    "system": "random 3 clusters",
+    "task": "S1",
+    "bcubed_f": 0.4365653596817564,
+    "spearman": -0.00236199687110495
+  },
+  {
+    "system": "random 5 clusters",
+    "task": "S1",
+    "bcubed_f": 0.3111993966647003,
+    "spearman": -0.13788504087556194
+  },
+  {
+    "system": "oracle single-label (first gold sense)",
+    "task": "S1",
+    "bcubed_f": 0.9123616561796444,
+    "spearman": 0.9257344619316501
+  },
+  {
+    "system": "oracle (gold labels)",
+    "task": "S2",
+    "macro_f1": 1.0
+  },
+  {
+    "system": "all 1",
+    "task": "S2",
+    "macro_f1": 0.23581479994186685
+  },
+  {
+    "system": "all 0",
+    "task": "S2",
+    "macro_f1": 0.36125429577178153
+  },
+  {
+    "system": "random 50/50",
+    "task": "S2",
+    "macro_f1": 0.4458907096920899
+  }
+]

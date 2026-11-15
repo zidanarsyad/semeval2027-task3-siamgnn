@@ -1,0 +1,29 @@
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Synthetic English} & \multicolumn{3}{c}{Swedish dev} \\
+\cmidrule(lr){2-4}\cmidrule(l){5-7}
+Configuration & B$^3$-F1 & $\rho$ & $k$ & B$^3$-F1 & $\rho$ & $k$ \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Similarity $\times$ algorithm ($\theta$ from 12 held-out training words)}} \\
+Calibrated cosine + CC ($\theta{=}0.4$) & .674 & .183 & 7.3 & .797 & .549 & 4.9 \\
+Calibrated cosine + agglomerative ($\theta{=}0.4$) & .674 & .284 & 6.1 & .810 & .540 & 3.9 \\
+\sys{} (ensemble) + CC ($\theta{=}0.7$) & .660 & .201 & 6.0 & .773 & .524 & 3.5 \\
+\sys{} (ensemble) + agglomerative ($\theta{=}0.5$) & .694 & .292 & 2.5 & .794 & .414 & 2.2 \\
+Mean of both + CC ($\theta{=}0.5$) & .666 & .200 & 5.2 & .789 & .472 & 3.6 \\
+Mean of both + agglomerative ($\theta{=}0.5$) & .666 & .252 & 4.5 & .790 & .475 & 3.2 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Seed ensembles + CC}} \\
+Siamese head, 3 seeds ($\theta{=}0.5$) & .670 & .161 & 8.0 & .770 & .396 & 4.6 \\
+\sys{}, 3 seeds ($\theta{=}0.5$) & .682 & .249 & 3.0 & .785 & .484 & 2.4 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{CC at fixed $\theta{=}0.5$ (mean of 3 seeds)}} \\
+Siamese head & .670\std{.000} & .181\std{.019} & 7.9 & .769\std{.002} & .435\std{.030} & 4.7 \\
+\sys{} & .689\std{.004} & .262\std{.033} & 3.2 & .782\std{.006} & .431\std{.058} & 2.5 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Feature smoothing over the $k$NN graph + agglomerative}} \\
+Smoothing, $k{=}5$, 2 steps, $t{=}0.3$ & .684 & .211 & 3.6 & .786 & .564 & 3.2 \\
+Smoothing, $k{=}5$, 2 steps (LOWO) & -- & -- & -- & .793 & .548 & 2.8 \\
+Smoothing, $k{=}10$, 2 steps, $t{=}0.3$ & .692 & .196 & 3.4 & .784 & .490 & 2.9 \\
+Smoothing, $k{=}10$, 2 steps (LOWO) & -- & -- & -- & .768 & .367 & 3.0 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,8 @@
+XL-LEXEME + agglomerative                      [synEN-tune t=0.4] synEN B3=0.687 rho=0.238 | SV B3=0.815 rho=0.523 k=3.5
+XL-LEXEME + agglomerative                      [SV-LOWO] SV B3=0.779 rho=0.303 k=3.6
+SGC smoothing (k=5, 2 hops) + agglomerative    [synEN-tune t=0.3] synEN B3=0.684 rho=0.211 | SV B3=0.786 rho=0.564 k=3.2
+SGC smoothing (k=5, 2 hops) + agglomerative    [SV-LOWO] SV B3=0.793 rho=0.548 k=2.8
+SGC smoothing (k=10, 2 hops) + agglomerative   [synEN-tune t=0.3] synEN B3=0.692 rho=0.196 | SV B3=0.784 rho=0.490 k=2.9
+external\semeval2027-task3\evaluation.py:57: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  rho, pvalue = spearmanr(gold_scores, predicted_scores)
+SGC smoothing (k=10, 2 hops) + agglomerative   [SV-LOWO] SV B3=0.768 rho=0.367 k=3.0

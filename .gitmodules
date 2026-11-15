@@ -1,0 +1,3 @@
+[submodule "external/semeval2027-task3"]
+	path = external/semeval2027-task3
+	url = https://github.com/ChangeIsKey/semeval2027-task3

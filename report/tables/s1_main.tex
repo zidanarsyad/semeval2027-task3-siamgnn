@@ -1,0 +1,24 @@
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Synthetic English (20 held-out words)} & \multicolumn{3}{c}{Swedish dev (10 words)} \\
+\cmidrule(lr){2-4}\cmidrule(l){5-7}
+System & 1a B$^3$-F1 & 1b $\rho$ & $k$ & 1a B$^3$-F1 & 1b $\rho$ & $k$ \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Zero-shot: thresholds and models fit on synthetic-English training words only}} \\
+One cluster per word & .680 & .000 & 1.0 & .756 & .000 & 1.0 \\
+\xll{} + Affinity Propagation & -- & -- & -- & .258 & .295 & 20.2 \\
+\xll{} + DMoN (unsupervised GNN) & -- & -- & -- & .447 & .345 & 5.4 \\
+\xll{} + agglomerative, $t{=}.40$ (\emph{existing}) & .687 & .238 & 4.8 & \textbf{.815} & \textbf{.523} & 3.5 \\
+\xll{} + correlation clustering, $\theta{=}.55$ & \textbf{.709} & .165 & 4.6 & .792 & .486 & 3.6 \\
+Siamese head, no GNN + CC & .681\std{.008} & .173\std{.015} & 5.6 & .777\std{.008} & .342\std{.049} & 3.7 \\
+\sys{} + CC & .678\std{.010} & .249\std{.039} & 4.0 & .777\std{.008} & .481\std{.014} & 2.7 \\
+\sys{} (3-seed ensemble) + agglomerative & .694 & \textbf{.292} & 2.5 & .794 & .414 & 2.2 \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Few-shot Swedish: leave-one-word-out, the other nine words choose $t$ or adapt the model}} \\
+\xll{} + agglomerative & -- & -- & -- & .779 & .303 & 3.6 \\
+\xll{} + correlation clustering & -- & -- & -- & \textbf{.796} & \textbf{.546} & 5.1 \\
+\sys{} + few-shot adaptation + CC & -- & -- & -- & .787\std{.007} & .458\std{.024} & 2.9 \\
+\midrule
+Gold senses per word & & & 3.65 & & & 5.7 \\
+\bottomrule
+\end{tabular}

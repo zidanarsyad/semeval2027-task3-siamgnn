@@ -1,0 +1,243 @@
+[
+  {
+    "system": "1C1W (one sense per word)",
+    "protocol": "-",
+    "seed": null,
+    "synEN_b3": 0.6801976490941345,
+    "synEN_rho": 0,
+    "synEN_k": 1.0,
+    "SV_b3": 0.7563415432223628,
+    "SV_rho": 0,
+    "SV_k": 1.0
+  },
+  {
+    "system": "XL-LEXEME + agglomerative (t=0.4)",
+    "protocol": "synEN-tune",
+    "seed": null,
+    "synEN_b3": 0.687182860921648,
+    "synEN_rho": 0.23802683921251924,
+    "synEN_k": 4.8,
+    "SV_b3": 0.8151280844034847,
+    "SV_rho": 0.5234141901348279,
+    "SV_k": 3.5
+  },
+  {
+    "system": "XL-LEXEME + agglomerative",
+    "protocol": "SV-LOWO",
+    "seed": null,
+    "SV_b3": 0.7787345511057084,
+    "SV_rho": 0.303461074749682,
+    "SV_k": 3.6
+  },
+  {
+    "system": "XL-LEXEME + correlation clustering (t=0.55)",
+    "protocol": "synEN-tune",
+    "seed": null,
+    "synEN_b3": 0.7092515564928797,
+    "synEN_rho": 0.16494613991988183,
+    "synEN_k": 4.6,
+    "SV_b3": 0.7918221769879248,
+    "SV_rho": 0.4858674186145239,
+    "SV_k": 3.6
+  },
+  {
+    "system": "XL-LEXEME + correlation clustering",
+    "protocol": "SV-LOWO",
+    "seed": null,
+    "SV_b3": 0.7957455695503584,
+    "SV_rho": 0.5464638312467611,
+    "SV_k": 5.1
+  },
+  {
+    "system": "Siamese head + CC (theta tuned on synEN-val)",
+    "protocol": "synEN-train",
+    "seed": 0,
+    "theta": 0.3,
+    "synEN_b3": 0.685350773142049,
+    "synEN_rho": 0.15822490708416959,
+    "synEN_k": 4.5,
+    "SV_b3": 0.7839852924141203,
+    "SV_rho": 0.31935767780147856,
+    "SV_k": 3.4
+  },
+  {
+    "system": "Siamese head + CC@0.5",
+    "protocol": "synEN-train",
+    "seed": 0,
+    "synEN_b3": 0.6694309717050693,
+    "synEN_rho": 0.1947664965561133,
+    "synEN_k": 7.9,
+    "SV_b3": 0.7702785259468644,
+    "SV_rho": 0.47634551184439317,
+    "SV_k": 4.6
+  },
+  {
+    "system": "Siamese head + few-shot SV adaptation + CC",
+    "protocol": "SV-LOWO",
+    "seed": 0,
+    "theta": 0.3,
+    "SV_b3": 0.7797742519681548,
+    "SV_rho": 0.3437417409679568,
+    "SV_k": 3.2
+  },
+  {
+    "system": "Siamese head + CC (theta tuned on synEN-val)",
+    "protocol": "synEN-train",
+    "seed": 1,
+    "theta": 0.5,
+    "synEN_b3": 0.6699698608986374,
+    "synEN_rho": 0.19425652916872913,
+    "synEN_k": 8.0,
+    "SV_b3": 0.7664015477935565,
+    "SV_rho": 0.40901514977520265,
+    "SV_k": 4.7
+  },
+  {
+    "system": "Siamese head + CC@0.5",
+    "protocol": "synEN-train",
+    "seed": 1,
+    "synEN_b3": 0.6699698608986374,
+    "synEN_rho": 0.19425652916872913,
+    "synEN_k": 8.0,
+    "SV_b3": 0.7664015477935565,
+    "SV_rho": 0.40901514977520265,
+    "SV_k": 4.7
+  },
+  {
+    "system": "Siamese head + few-shot SV adaptation + CC",
+    "protocol": "SV-LOWO",
+    "seed": 1,
+    "theta": 0.5,
+    "SV_b3": 0.7663146891647792,
+    "SV_rho": 0.5313165744139332,
+    "SV_k": 5.0
+  },
+  {
+    "system": "Siamese head + CC (theta tuned on synEN-val)",
+    "protocol": "synEN-train",
+    "seed": 2,
+    "theta": 0.3,
+    "synEN_b3": 0.6882807585616781,
+    "synEN_rho": 0.1676421528053392,
+    "synEN_k": 4.4,
+    "SV_b3": 0.781260304594878,
+    "SV_rho": 0.29615920333083656,
+    "SV_k": 3.1
+  },
+  {
+    "system": "Siamese head + CC@0.5",
+    "protocol": "synEN-train",
+    "seed": 2,
+    "synEN_b3": 0.6700577861230984,
+    "synEN_rho": 0.15439267140542365,
+    "synEN_k": 7.85,
+    "SV_b3": 0.7697920201497284,
+    "SV_rho": 0.41940989135358275,
+    "SV_k": 4.9
+  },
+  {
+    "system": "Siamese head + few-shot SV adaptation + CC",
+    "protocol": "SV-LOWO",
+    "seed": 2,
+    "theta": 0.3,
+    "SV_b3": 0.766472001573601,
+    "SV_rho": 0.3785182613590449,
+    "SV_k": 3.2
+  },
+  {
+    "system": "SiamGNN + CC (theta tuned on synEN-val)",
+    "protocol": "synEN-train",
+    "seed": 0,
+    "theta": 0.5,
+    "synEN_b3": 0.692266839873257,
+    "synEN_rho": 0.3008752607844932,
+    "synEN_k": 3.05,
+    "SV_b3": 0.7879601174454977,
+    "SV_rho": 0.48375697651501354,
+    "SV_k": 2.4
+  },
+  {
+    "system": "SiamGNN + CC@0.5",
+    "protocol": "synEN-train",
+    "seed": 0,
+    "synEN_b3": 0.692266839873257,
+    "synEN_rho": 0.3008752607844932,
+    "synEN_k": 3.05,
+    "SV_b3": 0.7879601174454977,
+    "SV_rho": 0.48375697651501354,
+    "SV_k": 2.4
+  },
+  {
+    "system": "SiamGNN + few-shot SV adaptation + CC",
+    "protocol": "SV-LOWO",
+    "seed": 0,
+    "theta": 0.5,
+    "SV_b3": 0.7867315467208913,
+    "SV_rho": 0.4359909387953058,
+    "SV_k": 2.6
+  },
+  {
+    "system": "SiamGNN + CC (theta tuned on synEN-val)",
+    "protocol": "synEN-train",
+    "seed": 1,
+    "theta": 0.6,
+    "synEN_b3": 0.6700037416047235,
+    "synEN_rho": 0.23996709911048555,
+    "synEN_k": 4.35,
+    "SV_b3": 0.7674670575767518,
+    "SV_rho": 0.46223502522937104,
+    "SV_k": 2.7
+  },
+  {
+    "system": "SiamGNN + CC@0.5",
+    "protocol": "synEN-train",
+    "seed": 1,
+    "synEN_b3": 0.6829529271746593,
+    "synEN_rho": 0.2192459072143325,
+    "synEN_k": 3.2,
+    "SV_b3": 0.782563372294568,
+    "SV_rho": 0.46033268355147994,
+    "SV_k": 2.4
+  },
+  {
+    "system": "SiamGNN + few-shot SV adaptation + CC",
+    "protocol": "SV-LOWO",
+    "seed": 1,
+    "theta": 0.6,
+    "SV_b3": 0.7945587909662419,
+    "SV_rho": 0.44759505781775083,
+    "SV_k": 3.0
+  },
+  {
+    "system": "SiamGNN + CC (theta tuned on synEN-val)",
+    "protocol": "synEN-train",
+    "seed": 2,
+    "theta": 0.6,
+    "synEN_b3": 0.6721562739097786,
+    "synEN_rho": 0.20688382054538446,
+    "synEN_k": 4.6,
+    "SV_b3": 0.7762788415216134,
+    "SV_rho": 0.49639966871509633,
+    "SV_k": 3.1
+  },
+  {
+    "system": "SiamGNN + CC@0.5",
+    "protocol": "synEN-train",
+    "seed": 2,
+    "synEN_b3": 0.6921395330323037,
+    "synEN_rho": 0.2660813014359243,
+    "synEN_k": 3.45,
+    "SV_b3": 0.7743999157829624,
+    "SV_rho": 0.3502442088955445,
+    "SV_k": 2.6
+  },
+  {
+    "system": "SiamGNN + few-shot SV adaptation + CC",
+    "protocol": "SV-LOWO",
+    "seed": 2,
+    "theta": 0.6,
+    "SV_b3": 0.7782685770783208,
+    "SV_rho": 0.4918675834214456,
+    "SV_k": 3.1
+  }
+]

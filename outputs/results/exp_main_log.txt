@@ -1,0 +1,44 @@
+external\semeval2027-task3\evaluation.py:57: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  rho, pvalue = spearmanr(gold_scores, predicted_scores)
+1C1W (one sense per word)                    [-         ] synEN: B3=0.680 rho=0.000 k=1.0  SV: B3=0.756 rho=0.000 k=1.0
+XL-LEXEME + agglomerative (t=0.4)            [synEN-tune] synEN: B3=0.687 rho=0.238 k=4.8  SV: B3=0.815 rho=0.523 k=3.5
+XL-LEXEME + agglomerative                    [SV-LOWO   ] SV: B3=0.779 rho=0.303 k=3.6
+XL-LEXEME + correlation clustering (t=0.55)  [synEN-tune] synEN: B3=0.709 rho=0.165 k=4.6  SV: B3=0.792 rho=0.486 k=3.6
+XL-LEXEME + correlation clustering           [SV-LOWO   ] SV: B3=0.796 rho=0.546 k=5.1
+Siamese head + CC (theta tuned on synEN-val) [synEN-train] synEN: B3=0.685 rho=0.158 k=4.5  SV: B3=0.784 rho=0.319 k=3.4
+Siamese head + CC@0.5                        [synEN-train] synEN: B3=0.669 rho=0.195 k=7.9  SV: B3=0.770 rho=0.476 k=4.6
+   (train+eval 74s)
+Siamese head + few-shot SV adaptation + CC   [SV-LOWO   ] SV: B3=0.780 rho=0.344 k=3.2
+Siamese head + CC (theta tuned on synEN-val) [synEN-train] synEN: B3=0.670 rho=0.194 k=8.0  SV: B3=0.766 rho=0.409 k=4.7
+Siamese head + CC@0.5                        [synEN-train] synEN: B3=0.670 rho=0.194 k=8.0  SV: B3=0.766 rho=0.409 k=4.7
+   (train+eval 70s)
+Siamese head + few-shot SV adaptation + CC   [SV-LOWO   ] SV: B3=0.766 rho=0.531 k=5.0
+Siamese head + CC (theta tuned on synEN-val) [synEN-train] synEN: B3=0.688 rho=0.168 k=4.4  SV: B3=0.781 rho=0.296 k=3.1
+Siamese head + CC@0.5                        [synEN-train] synEN: B3=0.670 rho=0.154 k=7.8  SV: B3=0.770 rho=0.419 k=4.9
+   (train+eval 60s)
+Siamese head + few-shot SV adaptation + CC   [SV-LOWO   ] SV: B3=0.766 rho=0.379 k=3.2
+SiamGNN + CC (theta tuned on synEN-val)      [synEN-train] synEN: B3=0.692 rho=0.301 k=3.0  SV: B3=0.788 rho=0.484 k=2.4
+SiamGNN + CC@0.5                             [synEN-train] synEN: B3=0.692 rho=0.301 k=3.0  SV: B3=0.788 rho=0.484 k=2.4
+   (train+eval 79s)
+SiamGNN + few-shot SV adaptation + CC        [SV-LOWO   ] SV: B3=0.787 rho=0.436 k=2.6
+SiamGNN + CC (theta tuned on synEN-val)      [synEN-train] synEN: B3=0.670 rho=0.240 k=4.3  SV: B3=0.767 rho=0.462 k=2.7
+SiamGNN + CC@0.5                             [synEN-train] synEN: B3=0.683 rho=0.219 k=3.2  SV: B3=0.783 rho=0.460 k=2.4
+   (train+eval 77s)
+SiamGNN + few-shot SV adaptation + CC        [SV-LOWO   ] SV: B3=0.795 rho=0.448 k=3.0
+SiamGNN + CC (theta tuned on synEN-val)      [synEN-train] synEN: B3=0.672 rho=0.207 k=4.6  SV: B3=0.776 rho=0.496 k=3.1
+SiamGNN + CC@0.5                             [synEN-train] synEN: B3=0.692 rho=0.266 k=3.5  SV: B3=0.774 rho=0.350 k=2.6
+   (train+eval 73s)
+SiamGNN + few-shot SV adaptation + CC        [SV-LOWO   ] SV: B3=0.778 rho=0.492 k=3.1
+
+Summary (mean over seeds):
+  1C1W (one sense per word)                        [-         ] synEN_b3=0.680  synEN_rho=0.000  SV_b3=0.756  SV_rho=0.000
+  XL-LEXEME + agglomerative (t=0.4)                [synEN-tune] synEN_b3=0.687  synEN_rho=0.238  SV_b3=0.815  SV_rho=0.523
+  XL-LEXEME + agglomerative                        [SV-LOWO   ] SV_b3=0.779  SV_rho=0.303
+  XL-LEXEME + correlation clustering (t=0.55)      [synEN-tune] synEN_b3=0.709  synEN_rho=0.165  SV_b3=0.792  SV_rho=0.486
+  XL-LEXEME + correlation clustering               [SV-LOWO   ] SV_b3=0.796  SV_rho=0.546
+  Siamese head + CC (theta tuned on synEN-val)     [synEN-train] synEN_b3=0.681±0.008  synEN_rho=0.173±0.015  SV_b3=0.777±0.008  SV_rho=0.342±0.049
+  Siamese head + CC@0.5                            [synEN-train] synEN_b3=0.670±0.000  synEN_rho=0.181±0.019  SV_b3=0.769±0.002  SV_rho=0.435±0.030
+  Siamese head + few-shot SV adaptation + CC       [SV-LOWO   ] SV_b3=0.771±0.006  SV_rho=0.418±0.081
+  SiamGNN + CC (theta tuned on synEN-val)          [synEN-train] synEN_b3=0.678±0.010  synEN_rho=0.249±0.039  SV_b3=0.777±0.008  SV_rho=0.481±0.014
+  SiamGNN + CC@0.5                                 [synEN-train] synEN_b3=0.689±0.004  synEN_rho=0.262±0.033  SV_b3=0.782±0.006  SV_rho=0.431±0.058
+  SiamGNN + few-shot SV adaptation + CC            [SV-LOWO   ] SV_b3=0.787±0.007  SV_rho=0.458±0.024

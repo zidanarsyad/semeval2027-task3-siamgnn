@@ -1,0 +1,12 @@
+{
+  "_comment": "Hyper-parameters chosen on dev data only (see outputs/results). s2_alpha=0 disables APPNP, which did not help on top of prototype refinement.",
+  "s1_baseline_threshold": 0.4,
+  "s1_siamgnn_theta": 0.5,
+  "s1_cc_restarts": 10,
+  "s2_baseline_tau": 0.762,
+  "s2_tau": 0.8625,
+  "s2_top": 0.05,
+  "s2_iter": 3,
+  "s2_alpha": 0.0,
+  "s2_knn": 5
+}

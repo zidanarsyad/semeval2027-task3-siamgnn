@@ -1,0 +1,8 @@
+  step     0 loss 1.0990
+  step   500 loss 0.6058
+  step  1000 loss 0.5558
+  step  1500 loss 0.5559
+  step  1999 loss 0.4945
+  step     0 loss 0.5626
+  step   299 loss 0.4763
+saved models/siamgnn_final.pt

@@ -1,0 +1,13 @@
+{
+  "_comment": "Copy to configs/author.json (git-ignored) and fill in; scripts/build_report.py reads it and falls back to this example. author_note becomes a footnote on the author name and acknowledgment_note is prepended to the acknowledgments; leave them empty if not needed. code_url adds a code footnote when it starts with http.",
+  "team": "[Team]",
+  "name": "[Author Name]",
+  "programme": "[Department or programme]",
+  "faculty_en": "[Faculty]",
+  "university": "[University]",
+  "city": "[City, Country]",
+  "email": "[email]",
+  "code_url": "",
+  "author_note": "",
+  "acknowledgment_note": ""
+}

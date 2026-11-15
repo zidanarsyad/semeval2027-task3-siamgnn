@@ -1,0 +1,20 @@
+  [usages_synEN_TRAIN] 3500/8775 encoded
+  [usages_synEN_TRAIN] 4000/8775 encoded
+  [usages_synEN_TRAIN] 4500/8775 encoded
+  [usages_synEN_TRAIN] 5000/8775 encoded
+  [usages_synEN_TRAIN] 5500/8775 encoded
+  [usages_synEN_TRAIN] 6000/8775 encoded
+  [usages_synEN_TRAIN] 6500/8775 encoded
+  [usages_synEN_TRAIN] 7000/8775 encoded
+  [usages_synEN_TRAIN] 7500/8775 encoded
+  [usages_synEN_TRAIN] 8000/8775 encoded
+  [usages_synEN_TRAIN] 8500/8775 encoded
+  [usages_synEN_TRAIN] 8775/8775 encoded
+TRAIN_SUB (8775, 1024)
+  [usages_synEN_DEV] 500/2850 encoded
+  [usages_synEN_DEV] 1000/2850 encoded
+  [usages_synEN_DEV] 1500/2850 encoded
+  [usages_synEN_DEV] 2000/2850 encoded
+  [usages_synEN_DEV] 2500/2850 encoded
+  [usages_synEN_DEV] 2850/2850 encoded
+DEV20_SUB (2850, 1024)

@@ -1,0 +1,423 @@
+{
+  "data": {
+    "SV_dev": {
+      "words": 10,
+      "usages": 1983,
+      "periods": 10,
+      "period_labels": [
+        "1880-1883",
+        "1888-1891",
+        "1896-1899",
+        "1904-1907",
+        "1912-1915",
+        "2006-2007",
+        "2010-2011",
+        "2014-2015",
+        "2018-2019",
+        "2022-2023"
+      ],
+      "years": [
+        1880,
+        2023
+      ],
+      "usages_per_word": [
+        98,
+        198.3,
+        291
+      ],
+      "gold_senses_per_word": [
+        3,
+        5.7,
+        12
+      ],
+      "multi_sense_usage_rate": 0.13212304589006554,
+      "scored_1b_pairs": 60,
+      "s2_positive_rate": 0.3555219364599092
+    },
+    "synEN_TRAIN_SUB": {
+      "words": 60,
+      "usages": 8775,
+      "periods": 10,
+      "period_labels": [
+        "1810-1829",
+        "1830-1849",
+        "1850-1869",
+        "1870-1889",
+        "1890-1909",
+        "1910-1929",
+        "1930-1949",
+        "1950-1969",
+        "1970-1989",
+        "1990-2009"
+      ],
+      "years": [
+        1810,
+        1990
+      ],
+      "usages_per_word": [
+        90,
+        146.25,
+        150
+      ],
+      "gold_senses_per_word": [
+        2,
+        4.016666666666667,
+        12
+      ],
+      "multi_sense_usage_rate": 0.0,
+      "scored_1b_pairs": 525
+    },
+    "synEN_DEV20_SUB": {
+      "words": 20,
+      "usages": 2850,
+      "periods": 10,
+      "period_labels": [
+        "1810-1829",
+        "1830-1849",
+        "1850-1869",
+        "1870-1889",
+        "1890-1909",
+        "1910-1929",
+        "1930-1949",
+        "1950-1969",
+        "1970-1989",
+        "1990-2009"
+      ],
+      "years": [
+        1810,
+        1990
+      ],
+      "usages_per_word": [
+        60,
+        142.5,
+        150
+      ],
+      "gold_senses_per_word": [
+        2,
+        3.65,
+        8
+      ],
+      "multi_sense_usage_rate": 0.0,
+      "scored_1b_pairs": 170
+    }
+  },
+  "per_word": {
+    "kvinna": {
+      "n": 290,
+      "periods": 10,
+      "k_gold": 5,
+      "existing": {
+        "k": 1,
+        "b3": 0.7867069117564337
+      },
+      "siamgnn": {
+        "k": 1,
+        "b3": 0.7867069117564337
+      },
+      "s2_pos_rate": 0.22758620689655173,
+      "s2_f1_existing": 0.21199545477002124,
+      "s2_f1_prototype": 0.21873270103701517,
+      "s2_auc_existing": 0.32717803030303033,
+      "s2_auc_prototype": 0.2689393939393939,
+      "cos": {
+        "same_within": 0.9317451119422913,
+        "same_across": 0.9243512153625488,
+        "diff": 0.9136536717414856
+      },
+      "definition": "Generell beteckning för kvinnokönet eller samtliga kvinnor i ett land / samfund (ofta i singularis bestämd form, \"kvinnan\")"
+    },
+    "skär": {
+      "n": 98,
+      "periods": 5,
+      "k_gold": 6,
+      "existing": {
+        "k": 4,
+        "b3": 0.5988284589554087
+      },
+      "siamgnn": {
+        "k": 2,
+        "b3": 0.5687220167330276
+      },
+      "s2_pos_rate": 0.2755102040816326,
+      "s2_f1_existing": 0.4608695652173913,
+      "s2_f1_prototype": 0.5080870050195203,
+      "s2_auc_existing": 0.46426708398539385,
+      "s2_auc_prototype": 0.5811163275952008,
+      "cos": {
+        "same_within": 0.6610363125801086,
+        "same_across": null,
+        "diff": 0.5362893342971802
+      },
+      "definition": "Klar, blank, skir; ren, ljus och vacker; skinande vit, ljushyllt"
+    },
+    "fröken": {
+      "n": 174,
+      "periods": 10,
+      "k_gold": 4,
+      "existing": {
+        "k": 3,
+        "b3": 0.8091699364503673
+      },
+      "siamgnn": {
+        "k": 3,
+        "b3": 0.8339851643256931
+      },
+      "s2_pos_rate": 0.05747126436781609,
+      "s2_f1_existing": 0.6504464285714285,
+      "s2_f1_prototype": 0.5448275862068965,
+      "s2_auc_existing": 0.8,
+      "s2_auc_prototype": 0.8262195121951219,
+      "cos": {
+        "same_within": 0.8228904604911804,
+        "same_across": 0.7761702537536621,
+        "diff": 0.653225839138031
+      },
+      "definition": "Gift eller ogift yrkesutövande kvinna, företrädesvis i skola, butik, postkontor, och bank"
+    },
+    "dumpa": {
+      "n": 145,
+      "periods": 5,
+      "k_gold": 6,
+      "existing": {
+        "k": 5,
+        "b3": 0.889780049730109
+      },
+      "siamgnn": {
+        "k": 3,
+        "b3": 0.869642815606751
+      },
+      "s2_pos_rate": 0.3103448275862069,
+      "s2_f1_existing": 0.4547008547008547,
+      "s2_f1_prototype": 0.5277898393399914,
+      "s2_auc_existing": 0.5866666666666667,
+      "s2_auc_prototype": 0.586,
+      "cos": {
+        "same_within": 0.7828579545021057,
+        "same_across": null,
+        "diff": 0.4418003559112549
+      },
+      "definition": "Låta något falla; lägga eller sänka ner"
+    },
+    "exportera": {
+      "n": 149,
+      "periods": 5,
+      "k_gold": 3,
+      "existing": {
+        "k": 1,
+        "b3": 0.9461217127124277
+      },
+      "siamgnn": {
+        "k": 2,
+        "b3": 0.9396517769169608
+      },
+      "s2_pos_rate": 0.9463087248322147,
+      "s2_f1_existing": 0.8946996466431096,
+      "s2_f1_prototype": 0.8527667984189724,
+      "s2_auc_existing": 0.9911347517730495,
+      "s2_auc_prototype": 0.9920212765957446,
+      "cos": {
+        "same_within": 0.9289364218711853,
+        "same_across": null,
+        "diff": 0.6562604308128357
+      },
+      "definition": "Föra ut en produkt ur ett land (till ett annat land)"
+    },
+    "fru": {
+      "n": 274,
+      "periods": 10,
+      "k_gold": 5,
+      "existing": {
+        "k": 6,
+        "b3": 0.884035138525609
+      },
+      "siamgnn": {
+        "k": 2,
+        "b3": 0.8887504628894471
+      },
+      "s2_pos_rate": 0.8941605839416058,
+      "s2_f1_existing": 0.5415354330708662,
+      "s2_f1_prototype": 0.5694568310188135,
+      "s2_auc_existing": 0.4233638282899366,
+      "s2_auc_prototype": 0.5337086558761435,
+      "cos": {
+        "same_within": 0.9096108675003052,
+        "same_across": 0.8280415534973145,
+        "diff": 0.8093584179878235
+      },
+      "definition": "Maka, hustru (oavsett klass)"
+    },
+    "herre": {
+      "n": 283,
+      "periods": 10,
+      "k_gold": 8,
+      "existing": {
+        "k": 6,
+        "b3": 0.8574356008704389
+      },
+      "siamgnn": {
+        "k": 5,
+        "b3": 0.8416161823921225
+      },
+      "s2_pos_rate": 0.0706713780918728,
+      "s2_f1_existing": 0.5613418160786582,
+      "s2_f1_prototype": 0.5666972887664005,
+      "s2_auc_existing": 0.8104562737642586,
+      "s2_auc_prototype": 0.7897338403041825,
+      "cos": {
+        "same_within": 0.8377857208251953,
+        "same_across": 0.653663694858551,
+        "diff": 0.5323451161384583
+      },
+      "definition": "Manlig överklassperson med betoning på privilegier, högre samhällsstånd; förnäm och mäktig man, högt uppsatt person, potentat, magnat, aristokrat; ståndsperson, herreman"
+    },
+    "förort": {
+      "n": 150,
+      "periods": 5,
+      "k_gold": 3,
+      "existing": {
+        "k": 1,
+        "b3": 0.8043147070716155
+      },
+      "siamgnn": {
+        "k": 1,
+        "b3": 0.8043147070716155
+      },
+      "s2_pos_rate": 0.49333333333333335,
+      "s2_f1_existing": 0.4552058111380145,
+      "s2_f1_prototype": 0.29807035070192966,
+      "s2_auc_existing": 0.5366287339971552,
+      "s2_auc_prototype": 0.5184921763869131,
+      "cos": {
+        "same_within": 0.8896298408508301,
+        "same_across": null,
+        "diff": 0.8884493708610535
+      },
+      "definition": "En invandrartät stadsdel som ligger utanför innerstaden; implicit förknypas med miljonprogrammet"
+    },
+    "suga": {
+      "n": 129,
+      "periods": 5,
+      "k_gold": 12,
+      "existing": {
+        "k": 5,
+        "b3": 0.6119654578810437
+      },
+      "siamgnn": {
+        "k": 3,
+        "b3": 0.4341341263515114
+      },
+      "s2_pos_rate": 0.18604651162790697,
+      "s2_f1_existing": 0.8761455878502226,
+      "s2_f1_prototype": 0.9007692307692308,
+      "s2_auc_existing": 0.9734126984126984,
+      "s2_auc_prototype": 0.9666666666666667,
+      "cos": {
+        "same_within": 0.8086950182914734,
+        "same_across": null,
+        "diff": 0.5197634696960449
+      },
+      "definition": "Dra in vätska eller gas i munnen genom åstadkommande av undertryck i munhålan eller kraftig inandning; alternativt stoppa någon fast kropp i munnen och genom kraftigt undertryck så småningom smälta och förtära den"
+    },
+    "motiv": {
+      "n": 291,
+      "periods": 10,
+      "k_gold": 5,
+      "existing": {
+        "k": 3,
+        "b3": 0.9629228700813938
+      },
+      "siamgnn": {
+        "k": 2,
+        "b3": 0.8802056783078605
+      },
+      "s2_pos_rate": 0.18213058419243985,
+      "s2_f1_existing": 0.6028535980148884,
+      "s2_f1_prototype": 0.8913278008298755,
+      "s2_auc_existing": 0.9707467892817504,
+      "s2_auc_prototype": 0.977088948787062,
+      "cos": {
+        "same_within": 0.873638391494751,
+        "same_across": 0.8370747566223145,
+        "diff": 0.4909791946411133
+      },
+      "definition": "Ämne för konstnärlig fram­ställning in­om bild­konst och skönlitteratur"
+    }
+  },
+  "pairs": {
+    "same_within": 0.8735688328742981,
+    "same_across": 0.8107143640518188,
+    "diff": 0.6507718563079834
+  },
+  "rho_breakdown": {
+    "existing": {
+      "n_pairs": 60,
+      "n_cross": 4,
+      "rho_all": 0.5234141901348279,
+      "rho_within_era": 0.5845094799066501,
+      "gold_rank_of_cross_pairs": [
+        1,
+        5,
+        8,
+        20
+      ],
+      "mean_gold_jsd": {
+        "cross": 0.396052920415696,
+        "within": 0.21457530360505928
+      }
+    },
+    "siamgnn": {
+      "n_pairs": 60,
+      "n_cross": 4,
+      "rho_all": 0.48384633686074313,
+      "rho_within_era": 0.5515608734224834,
+      "gold_rank_of_cross_pairs": [
+        1,
+        5,
+        8,
+        20
+      ],
+      "mean_gold_jsd": {
+        "cross": 0.396052920415696,
+        "within": 0.21457530360505928
+      }
+    },
+    "era_baseline": {
+      "n_pairs": 60,
+      "n_cross": 4,
+      "rho_all": 0.3395475503328477,
+      "rho_within_era": NaN,
+      "gold_rank_of_cross_pairs": [
+        1,
+        5,
+        8,
+        20
+      ],
+      "mean_gold_jsd": {
+        "cross": 0.396052920415696,
+        "within": 0.21457530360505928
+      }
+    }
+  },
+  "lowo_thresholds_existing": {
+    "kvinna": 0.4,
+    "skär": 0.4,
+    "fröken": 0.35,
+    "dumpa": 0.4,
+    "exportera": 0.4,
+    "fru": 0.4,
+    "herre": 0.35,
+    "förort": 0.35,
+    "suga": 0.45,
+    "motiv": 0.4
+  },
+  "check": {
+    "existing": [
+      0.8151280844034847,
+      0.5234141901348279
+    ],
+    "siamgnn_ens": [
+      0.7847729842351423,
+      0.48384633686074313
+    ]
+  }
+}

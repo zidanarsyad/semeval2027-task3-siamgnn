@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lcc@{}}
+\toprule
+System & macro-F1 & AUC \\
+\midrule
+All usages negative & .361 & -- \\
+Random (50/50) & .446 & -- \\
+\midrule
+$\cos(\mathbf{x}_i,\mathbf{g})$ (\emph{existing}) & .571 & .688 \\
+Multilingual-E5 sentence cosine & .531 & .640 \\
+APPNP propagation of $\cos(\mathbf{x}_i,\mathbf{g})$ & .575 & .695 \\
+\sys{} support probability & .579 & .698 \\
+One-shot prototype refinement (\emph{ours}) & \textbf{.588} & .704 \\
+Few-shot logistic-regression calibrator & .516 & \textbf{.746} \\
+\bottomrule
+\end{tabular}
